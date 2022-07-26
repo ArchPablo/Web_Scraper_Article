@@ -97,6 +97,6 @@ class Scraper:
 
 if __name__ == '__main__':
     num_page = int(input("enter number of pages:"))
-    category_article = input('enter category')
+    category_article = input('enter category')  # e.g. - News
     scraper_news = Scraper(URL, category=category_article, page=num_page)
     scraper_news.parser()
